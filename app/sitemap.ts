@@ -7,12 +7,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [projects, services] = await Promise.all([getAllProjectSlugs(), getAllServiceSlugs()]);
 
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: `${siteUrl}/`, changeFrequency: "weekly", priority: 1 },
-    { url: `${siteUrl}/projects`, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${siteUrl}/services`, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${siteUrl}/videos`, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${siteUrl}/faq`, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${siteUrl}/contact`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}`, changeFrequency: "weekly", priority: 1 },
+    { url: `${siteUrl}projects`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${siteUrl}services`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${siteUrl}videos`, changeFrequency: "weekly", priority: 0.6 },
+    { url: `${siteUrl}faq`, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${siteUrl}contact`, changeFrequency: "monthly", priority: 0.7 },
   ];
 
   const projectRoutes: MetadataRoute.Sitemap = projects.map((p: any) => ({
