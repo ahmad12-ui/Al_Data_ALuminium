@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 40 33% 97%;
+  --foreground: 20 24% 11%;
+  --border: 30 15% 85%;
+
+  /* ALDATA brand tokens */
+  --color-cream: #FAF8F4;
+  --color-offwhite: #F4EEE7;
+  --color-brown-900: #2B1A14;
+  --color-brown-800: #4A2F23;
+  --color-brown-700: #684535;
+  --color-brown-500: #8B624A;
+  --color-brown-300: #B99568;
+  --color-brown-200: #D8C3AD;
+  --color-charcoal: #241A16;
+  --color-warm-grey: #75665D;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Elegant scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-offwhite);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brown-300);
+  border-radius: 8px;
+}
+
+.section-container {
+  @apply mx-auto max-w-[1400px] px-6 md:px-10 lg:px-16;
+}
+
+.eyebrow {
+  @apply text-xs md:text-sm tracking-[0.25em] uppercase font-body font-semibold text-brown-500;
+}
+
+.focus-ring {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-brown-500 focus-visible:ring-offset-2 focus-visible:ring-offset-cream;
+}

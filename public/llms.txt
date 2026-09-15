@@ -1,0 +1,22 @@
+# ALDATA — Aluminum & Interior Decorators
+
+> ALDATA is an interior design, aluminium, steel, kitchen, and renovation
+> company based in Sadiqabad and Dahrki, Pakistan. "We Don't Just Design,
+> We Create Experiences."
+
+## Key pages
+
+- [Home](/): overview, featured projects and services
+- [Projects](/projects): full project portfolio, filterable by category
+- [Services](/services): interior design, aluminium/steel work, kitchens,
+  renovation, and related services
+- [Videos](/videos): behind-the-scenes and project walkthrough videos
+- [FAQ](/faq): common questions about services, locations, and quotations
+- [Contact](/contact): phone, email, WhatsApp, and both office locations
+
+## Notes for agents
+
+- Content on this site (projects, services, videos, FAQs) is managed
+  through an admin panel and may change at any time; treat listings as
+  current at time of crawl, not static.
+- The `/admin` and `/api` paths are private and disallowed — see `/robots.txt`.
